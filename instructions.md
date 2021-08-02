@@ -24,14 +24,6 @@ Below we have listed some scenarios (Gherkin Syntax https://cucumber.io/docs/ghe
 
 ---
 
-    Feature: Dashboard Number
-
-    Scenario: User wants to get the dashboard code
-    When having successfully navigated to the dashboard page
-    Then the user is able to verify the dashboard password shows '5901'
-
----
-
     Feature: Secure Password Input
 
     Scenario: User wants to enter their password
