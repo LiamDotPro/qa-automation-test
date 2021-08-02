@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "dashboard-app",
+    "slug": "dashboard-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "dashboard-app"
+}
