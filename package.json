@@ -1,10 +1,11 @@
 {
   "main": "index.js",
   "scripts": {
-    "android": "react-native run-android",
+    "android": "RCT_METRO_PORT=9988 react-native run-android",
     "ios": "react-native run-ios",
     "web": "expo start --web",
-    "start": "react-native start"
+    "start": "RCT_METRO_PORT=9988 react-native start",
+    "test:e2e": "cucumber-js --require-module @babel/register e2e/**/*.feature"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.0",
@@ -25,6 +26,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
+    "@babel/register": "^7.15.3",
+    "@cucumber/cucumber": "^7.3.1",
     "@types/jest": "^26.0.24",
     "@types/react": "^17.0.21",
     "@types/react-native": "^0.64.12",

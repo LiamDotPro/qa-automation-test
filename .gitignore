@@ -55,3 +55,6 @@ web-build/
 
 # Detox
 artifacts/
+
+# Logs
+*.log
