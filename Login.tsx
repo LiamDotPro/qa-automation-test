@@ -24,19 +24,21 @@ const Login: React.FC<Props> = ({navigation}) => {
             </View>
             <View>
                 <TextInput
+                    testID="email"
                     style={styles.input}
                     onChangeText={onEmailChange}
                     value={email}
                     placeholder={'Email Address'}
                 />
                 <TextInput
+                    testID="password"
                     style={styles.input}
                     onChangeText={onPasswordChange}
                     value={password}
                     secureTextEntry={true}
                     placeholder={'Password'}
                 />
-                <Button title={'Login'} onPress={onLogin}/>
+                <Button testID="loginBtn" title={'Login'} onPress={onLogin}/>
             </View>
         </View>
     );

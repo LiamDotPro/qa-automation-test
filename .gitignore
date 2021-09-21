@@ -52,3 +52,9 @@ buck-out/
 # Expo
 .expo/
 web-build/
+
+# Detox
+artifacts/
+
+# Logs
+*.log
